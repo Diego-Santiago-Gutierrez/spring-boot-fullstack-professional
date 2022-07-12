@@ -6,7 +6,7 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface StudentRepository
-        extends JpaRepository<Student, Long> {
+        extends JpaRepository <Student, Long> {
     @Query("" +
             "SELECT CASE WHEN COUNT(s) > 0 THEN " +
             "TRUE ELSE FALSE END " +
